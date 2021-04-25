@@ -92,7 +92,7 @@ public class StockSearchFragment extends Fragment {
     public void onSearch(){
         AlphaVantage av = AlphaVantage.getInstance();
         String q = mQuery.getText().toString();
-        Stock2 stk = av.getStock(q);
+        Stock stk = av.getStock(q);
         if (stk != null) {
             mStocks.add(stk);
         }
